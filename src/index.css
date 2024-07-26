@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.btn {
+  background: #ffffff;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 30px;
+  outline: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  background: #212121;
+  color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover img {
+  transform: translateX(5px);
+}
+
+.btn:active {
+  background: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.5);
+}
+
+.btn.dark-btn {
+  background: #212ea0;
+  color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .btn img {
+    width: 18px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  .btn img {
+    width: 16px;
+    margin-left: 5px;
+  }
+}
